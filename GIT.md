@@ -7,7 +7,10 @@
 > -- 위키백과 --
 
 #### Git 사용법
-- [Git 설치](https://git-scm.com)
+* [Git 설치](https://git-scm.com)
+
+#### GitHub
+* [GitHub 가입](https://github.com/)
 
 #### 초기 세팅
 Git Bash 실행
@@ -17,6 +20,6 @@ $ git config --global user.name "<이름>"
 ```
 
 #### 사용 툴
-- [Git GUI](http://git-scm.com/download/gui/win)
-- [SourceTree](https://www.sourcetreeapp.com/)
+* [Git GUI](http://git-scm.com/download/gui/win)
+* [SourceTree](https://www.sourcetreeapp.com/)
 
