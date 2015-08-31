@@ -1,4 +1,4 @@
-## Frontend-matey
+# Frontend-matey
 
 ```
 HTML, CSS, JavaScript, jQuery 기초를 위한 스터디 입니다.
@@ -12,8 +12,11 @@ HTML, CSS, JavaScript, jQuery 기초를 위한 스터디 입니다.
 > 처음 가졌던 목표를 마무리 지어 놓지 않으면 기회가 왔을 때 허둥댈 수밖에 없다.<br />
 > -- 김성근 --
 
+## 버전관리
+Git 링크를 클릭하면 해당 내용을 볼 수 있습니다.
+- [Git](GIT.md) 사용 설명
 
-### 과제 링크
+## 과제 링크
 
 - [01. rowspan에 대처가능한 테이블 만들기]()
 - [02. 추가 삭제가 용이한 탭버튼]()
