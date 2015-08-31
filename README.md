@@ -16,5 +16,5 @@ Git사용 (기존 SVN 보다 가볍고, 빠르며 분산관리 되기 때문에 
 * [Git 사용 설명](GIT.md)
 
 ## 과제 링크
-- ** [study01. rowspan에 대처가능한 테이블](study01/README.md)  **
-- ** [study02. 추가 삭제에 틀어지지 않는 탭](study02/README.md)  **
+* [study01. rowspan에 대처가능한 테이블](study01/README.md)  
+* [study02. 추가 삭제에 틀어지지 않는 탭](study02/README.md)  
