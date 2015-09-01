@@ -1,1 +1,1 @@
-#ChoSeungYeon
+#제이쿼리로 기능 구현
