@@ -11,5 +11,5 @@ HTML, CSS기본을 위한 공간입니다.
 > -- 김성근 --
 
 ## 과제 소개
-* [x] [study01. rowspan에 대처가능한 테이블 만들기](study01/README.md)  
-* [x] [study02. 추가 삭제에 틀어지지 않는 탭](study02/README.md)  
+* [ ] [study01. rowspan에 대처가능한 테이블 만들기](study01/README.md)  
+* [ ] [study02. 추가 삭제에 틀어지지 않는 탭](study02/README.md)  
