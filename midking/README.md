@@ -11,5 +11,7 @@ HTML, CSS기본을 위한 공간입니다.
 > -- 김성근 --
 
 ## 과제 소개
-* [ ] [study01. rowspan에 대처가능한 테이블 만들기](study01/README.md)  
-* [ ] [study02. 추가 삭제에 틀어지지 않는 탭](study02/README.md)  
+**체크박스는 현재 진행중인 과제 입니다.**  
+
+* [x] [study01. rowspan에 대처가능한 테이블 만들기](study01)  
+* [ ] [study02. 추가 삭제에 틀어지지 않는 탭](study02)  
