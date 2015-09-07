@@ -10,6 +10,7 @@
 2. table의 border는 1px 입니다.
 3. table을 제외한 어떤 태그에도 id 또는 class를 추가하지 않습니다.
 4. data 형식의 테이블 이기 때문에 tbody에 th가 있습니다.
+5. 테이블 양쪽에는 border가 없습니다.
 
 ### 소스
 ```html
