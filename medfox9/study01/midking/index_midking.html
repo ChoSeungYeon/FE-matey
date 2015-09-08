@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>loading</title>
+	<style>
+		html,body{margin:0;padding:0;width:100%;height:100%;position:relative;}
+
+		.box{position:absolute;width:100%;height:100%;background:rgba(0,0,0,0.4);z-index:1000;}
+		.loading{position:relative;width:1px;left:50%;top:200px;}
+		span{display:block;width:20px;height:20px;border-radius:10px;position:absolute;left:0;top:0;}
+
+		.rotate01{transform:translateX(-40px);animation-delay:0s;}
+		.rotate02{transform:translate(-30px, -30px);animation-delay:0.1s;}
+		.rotate03{transform:translateY(-40px);animation-delay:0.2s;}
+		.rotate04{transform:translate(30px, -30px);animation-delay:0.3s;}
+		.rotate05{transform:translate(40px);animation-delay:0.4s;}
+		.rotate06{transform:translate(30px, 30px);animation-delay:0.5s;}
+		.rotate07{transform:translateY(40px);animation-delay:0.6s;}
+		.rotate08{transform:translate(-30px, 30px);animation-delay:0.7s;} 
+		
+		@keyframes loading {
+			from{background:#000;}
+			to{background:#fff;}
+		}
+		span{
+			/* animation-name: loading;
+			animation-duration: 0.8s;
+			animation-iteration-count: infinite; */
+			animation:loading 0.8s infinite;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="loading">
+			<span class="rotate01"></span>
+			<span class="rotate02"></span>
+			<span class="rotate03"></span>
+			<span class="rotate04"></span>
+			<span class="rotate05"></span>
+			<span class="rotate06"></span>
+			<span class="rotate07"></span>
+			<span class="rotate08"></span>
+		</div>
+	</div>
+	<a href="#this">test link</a>
+</body>
+</html>
+
