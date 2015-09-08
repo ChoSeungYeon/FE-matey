@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>로딩 애니메이션 만들기</title>
+	<style>
+		html {height: 100%;}
+		body {position: relative; margin: 0; background-color: #000; height: 100%;}
+		.box {
+			position: absolute; top: 50%; left: 50%; width: 100px; height: 100px; margin: -50px 0 0 -50px;
+			background-color: #fff; text-align: center; line-height: 100px;
+			-webkit-animation: square 3s infinite ease-in;
+			animation: square 3s infinite ease-in;
+		}
+
+		@-webkit-keyframes square {
+			0% {-webkit-transform: perspective(175px);}
+			25% {-webkit-transform: perspective(175px) rotateX(180deg);}
+			50% {-webkit-transform: perspective(175px) rotateX(180deg) rotateY(180deg);}
+			75% {-webkit-transform: perspective(175px) rotateX(-180deg) rotateY(0deg);}
+			100% {-webkit-transform: perspective(175px) rotateX(0deg) rotateY(0deg);}
+		}
+
+		@keyframes square {
+			0% {transform: perspective(175px) rotateX(0deg) rotateY(0deg);}
+			25% {transform: perspective(175px) rotateX(180deg) rotateY(0deg);}
+			50% {transform: perspective(175px) rotateX(180deg) rotateY(180deg);}
+			75% {transform: perspective(175px) rotateX(0deg) rotateY(180deg);}
+			100% {transform: perspective(175px) rotateX(0deg) rotateY(0deg);}
+		}
+	</style>
+</head>
+<body>
+	<div class="box">LOADING</div>
+</body>
+</html>
