@@ -1,0 +1,10 @@
+table { border-collapse: collapse; border-top: 1px solid #000; border-bottom: 1px solid #000; }
+table th, table td { text-align: center; padding: 5px 25px; }
+table th { background: #f0f0f0; }
+table thead th { border-left: 1px solid #000; }
+table thead th:first-child { border-left: none; }
+table tbody th, table tbody td { border-top: 1px solid #000; }
+table tbody th { border-right: 1px solid #000; }
+table tbody td { border-left: 1px solid #000; }
+
+/*# sourceMappingURL=style_midking.css.map */
