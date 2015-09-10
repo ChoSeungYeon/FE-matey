@@ -12,7 +12,9 @@
 ``` css
 table{
 	border-collapse: separate;
-	border-spacing: 2px;
+	border-spacing:0;
+
+	//border-spacing: 5px 30px;
 }
 ```
 ![separate](images/midking_table01.png)
