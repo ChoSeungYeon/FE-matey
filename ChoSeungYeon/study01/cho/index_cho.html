@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>기본 탭 구현</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".tab a").on("click focus", function(){
+				$(".tab_con").removeClass("selected");
+				if($(this).parent().parent().hasClass("selected")) {
+					return false;
+				}else {
+					$(this).parent().parent().addClass("selected");
+				}
+			});
+		});
+	</script>
+	<style>
+		/*reset*/
+		body {margin: 0;}
+		div, a {box-sizing: border-box;}
+		ul {margin: 0; padding: 0;}
+		li {list-style:none;}
+		a {text-decoration: none;}
+
+		/*content*/
+		.tab_area {float:left; margin-left:20px;}
+		.tab_area:after {content:""; display:block; clear:both;}
+
+		.tabbox {position:relative; width:304px; border:2px solid #008210;}
+		
+		.tab_con .tab {position:absolute; top:0; width:100px;}
+		.tab_con .tab a {display:block; padding: 10px 0; border-bottom: 2px solid #008210; background-color: #98C0FF; text-align: center;}
+		.tab_con .tab a:hover,
+		.tab_con.selected .tab a {border-bottom: 2px solid #fff; background-color: #fff; color: #5800FF;}
+		.tab_con.selected .con {display: block;}
+
+		.tab_con01 .tab {left:0;}
+		.tab_con02 .tab {left:100px; border-left: 2px solid #008210;}
+		.tab_con03 .tab {left:200px; border-left: 2px solid #008210;}
+		
+		.tab_con .con {display: none; padding: 61px 10px 10px;}
+	</style>
+</head>
+<body>
+	<div class="tab_area">
+		<h2>기본 탭 구현</h2>
+
+		<div class="tabbox">
+			<div class="tab_con tab_con01 selected">
+				<div class="tab"><a href="#">탭1</a></div>
+				<div class="con">
+					<strong>탭 컨텐츠01</strong>
+					<p>내용내용내용내용내용내용<br />내용내용내용내용</p>
+				</div>
+			</div><!-- //tab_con01 -->
+
+			<div class="tab_con tab_con02">
+				<div class="tab"><a href="#">탭2</a></div>
+				<div class="con">
+					<strong>탭 컨텐츠02</strong>
+					<ul>
+						<li><a href="#">list1</a></li>
+						<li><a href="#">list2</a></li>
+						<li><a href="#">list3</a></li>
+					</ul>
+				</div>
+			</div><!-- //tab_con02 -->
+
+			<div class="tab_con tab_con03">
+				<div class="tab"><a href="#">탭3</a></div>
+				<div class="con">
+					<strong>탭 컨텐츠03</strong>
+					<p>퍼블퍼블퍼블퍼블<br />퍼블퍼블퍼블퍼블<br />퍼블퍼블퍼블퍼블</p>
+				</div>
+			</div><!-- //tab_con03 -->
+
+		</div><!-- //tabbox -->
+	</div><!-- //tab_area -->
+
+
+	
+</body>
+</html>
