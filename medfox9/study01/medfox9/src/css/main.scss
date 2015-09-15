@@ -21,7 +21,8 @@ html,body {
     margin:0 0 0 -50px;
     .inner {
         position:relative;
-        height:100%
+        height:100%;
+        overflow:hidden;
     }
     .rainGroup {
         position:relative;
@@ -30,14 +31,37 @@ html,body {
             height:100px;
             background:rgba(0,0,0,0.8);
             position:absolute;
-            &.rain1 {
-                left:0;
-            }
+            animation:rainAinmate 1s infinite linear;
         }
+   }
+    .rainGroup2 {
+        @extend .rainGroup;
+        top:-200%;
+    }
 
+
+}
+
+@for $i from 1 through 10 {
+    .rain#{$i} {
+        left:random(100)+px;
+        top:random(700)*-1+100+px;
+        opacity: (random(4)*0.1+0.1);
     }
 }
+
+
+@keyframes rainAinmate {
+    100%   {margin-top:1000px}
+}
+@keyframes rainAinmate2 {
+    100%   {margin-top:800px}
+}
+
+
+
+
 .text {
     position:absolute;
-    bottom:-25px;
+    bottom:-70px;
 }
