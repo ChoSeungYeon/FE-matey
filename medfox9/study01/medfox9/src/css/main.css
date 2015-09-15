@@ -1,6 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+/* mixin */
 html, body {
   margin: 0;
   padding: 0;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 14px;
 }
 
 .loading {
@@ -32,67 +36,97 @@ html, body {
 
 .rain1 {
   left: 88px;
-  top: -279px;
+  top: -216px;
   opacity: 0.5;
 }
 
 .rain2 {
-  left: 15px;
-  top: -113px;
-  opacity: 0.4;
+  left: 19px;
+  top: -33px;
+  opacity: 0.3;
 }
 
 .rain3 {
-  left: 86px;
-  top: -423px;
+  left: 44px;
+  top: 15px;
   opacity: 0.2;
 }
 
 .rain4 {
-  left: 21px;
-  top: -100px;
+  left: 20px;
+  top: -75px;
   opacity: 0.4;
 }
 
 .rain5 {
-  left: 50px;
-  top: -501px;
-  opacity: 0.5;
+  left: 86px;
+  top: -453px;
+  opacity: 0.2;
 }
 
 .rain6 {
-  left: 22px;
-  top: -445px;
-  opacity: 0.4;
+  left: 42px;
+  top: -85px;
+  opacity: 0.3;
 }
 
 .rain7 {
-  left: 71px;
-  top: 73px;
+  left: 92px;
+  top: -477px;
   opacity: 0.2;
 }
 
 .rain8 {
-  left: 59px;
-  top: -71px;
-  opacity: 0.2;
+  left: 19px;
+  top: -492px;
+  opacity: 0.4;
 }
 
 .rain9 {
-  left: 54px;
-  top: -34px;
-  opacity: 0.2;
+  left: 94px;
+  top: 71px;
+  opacity: 0.5;
 }
 
 .rain10 {
-  left: 46px;
-  top: -421px;
+  left: 51px;
+  top: -21px;
   opacity: 0.3;
 }
 
+@-webkit-keyframes rainAinmate {
+  100% {
+    margin-top: 1000px;
+  }
+}
+@-moz-keyframes rainAinmate {
+  100% {
+    margin-top: 1000px;
+  }
+}
+@-ms-keyframes rainAinmate {
+  100% {
+    margin-top: 1000px;
+  }
+}
 @keyframes rainAinmate {
   100% {
     margin-top: 1000px;
+  }
+}
+@-webkit-keyframes rainAinmate2 {
+  100% {
+    margin-top: 800px;
+  }
+}
+@-moz-keyframes rainAinmate2 {
+  100% {
+    margin-top: 800px;
+  }
+}
+@-ms-keyframes rainAinmate2 {
+  100% {
+    margin-top: 800px;
   }
 }
 @keyframes rainAinmate2 {
@@ -103,6 +137,9 @@ html, body {
 .text {
   position: absolute;
   bottom: -70px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=main.css.map */
