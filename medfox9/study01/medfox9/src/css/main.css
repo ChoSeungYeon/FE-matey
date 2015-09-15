@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
 /* mixin */
+/* css area */
 html, body {
   margin: 0;
   padding: 0;
@@ -25,73 +26,135 @@ html, body {
 }
 .loading .rainGroup > div, .loading .rainGroup2 > div {
   width: 1px;
-  height: 100px;
+  height: 20px;
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
   animation: rainAinmate 1s infinite linear;
 }
 .loading .rainGroup2 {
-  top: -200%;
+  -webkit-animation-delay: 2s;
+  animation-delay: 3s;
+  top: -300%;
 }
 
 .rain1 {
-  left: 88px;
-  top: -216px;
-  opacity: 0.5;
-}
-
-.rain2 {
-  left: 19px;
-  top: -33px;
+  left: 60px;
+  top: -378px;
   opacity: 0.3;
 }
 
-.rain3 {
-  left: 44px;
-  top: 15px;
+.rain2 {
+  left: 52px;
+  top: -554px;
   opacity: 0.2;
 }
 
+.rain3 {
+  left: 66px;
+  top: -448px;
+  opacity: 0.4;
+}
+
 .rain4 {
-  left: 20px;
-  top: -75px;
+  left: 39px;
+  top: -48px;
   opacity: 0.4;
 }
 
 .rain5 {
-  left: 86px;
-  top: -453px;
-  opacity: 0.2;
-}
-
-.rain6 {
-  left: 42px;
-  top: -85px;
+  left: 2px;
+  top: -289px;
   opacity: 0.3;
 }
 
+.rain6 {
+  left: 91px;
+  top: -157px;
+  opacity: 0.2;
+}
+
 .rain7 {
-  left: 92px;
-  top: -477px;
+  left: 20px;
+  top: -466px;
   opacity: 0.2;
 }
 
 .rain8 {
-  left: 19px;
-  top: -492px;
+  left: 95px;
+  top: 91px;
   opacity: 0.4;
 }
 
 .rain9 {
-  left: 94px;
-  top: 71px;
-  opacity: 0.5;
+  left: 11px;
+  top: 98px;
+  opacity: 0.4;
 }
 
 .rain10 {
-  left: 51px;
-  top: -21px;
+  left: 45px;
+  top: -422px;
   opacity: 0.3;
+}
+
+.rain11 {
+  left: 17px;
+  top: 60px;
+  opacity: 0.4;
+}
+
+.rain12 {
+  left: 51px;
+  top: -297px;
+  opacity: 0.3;
+}
+
+.rain13 {
+  left: 57px;
+  top: -176px;
+  opacity: 0.2;
+}
+
+.rain14 {
+  left: 38px;
+  top: 53px;
+  opacity: 0.3;
+}
+
+.rain15 {
+  left: 21px;
+  top: -140px;
+  opacity: 0.3;
+}
+
+.rain16 {
+  left: 31px;
+  top: 61px;
+  opacity: 0.4;
+}
+
+.rain17 {
+  left: 9px;
+  top: -544px;
+  opacity: 0.3;
+}
+
+.rain18 {
+  left: 80px;
+  top: -188px;
+  opacity: 0.2;
+}
+
+.rain19 {
+  left: 84px;
+  top: -104px;
+  opacity: 0.4;
+}
+
+.rain20 {
+  left: 40px;
+  top: -67px;
+  opacity: 0.2;
 }
 
 @-webkit-keyframes rainAinmate {
@@ -136,7 +199,7 @@ html, body {
 }
 .text {
   position: absolute;
-  bottom: -70px;
+  bottom: -80px;
   font-size: 14px;
   text-align: center;
   font-weight: 700;
