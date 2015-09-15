@@ -6,7 +6,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>
 		$(document).ready(function(){
-			$(".tab a").on("click focus", function(){
+			$(".tab a").on("click focus", function(e){
+				e.preventDefault();
 				$(".tab_con").removeClass("selected");
 				if($(this).parent().parent().hasClass("selected")) {
 					return false;
@@ -78,8 +79,5 @@
 
 		</div><!-- //tabbox -->
 	</div><!-- //tab_area -->
-
-
-	
 </body>
 </html>
