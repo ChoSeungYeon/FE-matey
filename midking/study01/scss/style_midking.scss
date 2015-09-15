@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+$colorGrey:#f0f0f0;
+$border:1px solid #000;
+table{
+	border-collapse:collapse;
+	border-top:$border;
+	border-bottom:$border;
+	
+	th, td{
+		text-align:center;
+		padding:5px 25px;
+	}
+	th{
+		background:$colorGrey;
+	}
+	thead th{
+		border-left:$border;
+
+		&:first-child{
+			border-left:none;
+		}
+	}
+	tbody{
+		th,	td{
+			border-top:$border;
+		}
+		th{
+			border-right:$border;
+		}
+		td{
+			border-left:$border;
+		}
+	}
+} 
