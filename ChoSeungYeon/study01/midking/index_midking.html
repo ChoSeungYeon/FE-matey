@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/style_midking.css">
+	<title>tab</title>
+	<script>
+		$(document).ready(function() {
+			var $dtA = $('dl dt a');
+			var $dtA01 = $('.dlTab01 dt a');
+			var $dtA02 = $('.dlTab02 dt a');
+			var $dtA03 = $('.dlTab03 dt a');
+			var className = 'on';
+
+			/*$dl.on('click', function(){
+				$toggleClass($(this).parent(), className);
+			});*/
+
+			/* 경로, 클래스명 */
+			var $toggleClass = function toggleClass($this, className){
+				$this.addClass(className);
+				$this.siblings().removeClass(className);
+			}
+			
+			/* 경로, 동작(fast, slow) */
+			var $dlTab = function dlTab($dt, $speed){
+				$toggleClass($dt, className);
+				$dt.siblings('dd').hide($speed);
+				$dt.next().show($speed);
+			}
+
+			$dtA.on('click', function(){
+				$dlTab($(this).parent());
+			});
+
+			/*$dtA02.on('click', function(){
+				$dlTab($(this).parent(), "fast");
+			});
+
+			$dtA03.on('click', function(){
+				$dlTab($(this).parent(), "slow");
+			});*/
+
+			$('.tabList a').on('click', function(){
+				$toggleClass($(this), className);
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="dlTab">
+		<dl class="dlTab01">
+			<dt class="tab01 on"><a href="#this">tab01</a></dt>
+			<dd>
+				<ul>
+					<li><a href="#this">내용01</a></li>
+				</ul>
+			</dd>
+			<dt class="tab02"><a href="#this">tab02</a></dt>
+			<dd>
+				<ul>
+					<li><a href="#this">내용02</a></li>
+					<li><a href="#this">내용02</a></li>
+				</ul>
+			</dd>
+			<dt class="tab03"><a href="#this">tab03</a></dt>
+			<dd>
+				<ul>
+					<li><a href="#this">내용03</a></li>
+					<li><a href="#this">내용03</a></li>
+					<li><a href="#this">내용03</a></li>
+				</ul>
+			</dd>
+		</dl>
+		
+		<dl class="dlTab02">
+			<dt class="tab01 on"><a href="#this">tab01</a></dt>
+			<dd>
+				<ul>
+					<li><a href="#this">무궁화001</a></li>
+					<li><a href="#this">무궁화002</a></li>
+					<li><a href="#this">무궁화003</a></li>
+					<li><a href="#this">무궁화004</a></li>
+				</ul>
+			</dd>
+			<dt class="tab02"><a href="#this">tab02</a></dt>
+			<dd>
+				<ul>
+					<li><a href="#this">꽃이0001</a></li>
+					<li><a href="#this">꽃이0002</a></li>
+					<li><a href="#this">꽃이0003</a></li>
+					<li><a href="#this">꽃이0004</a></li>
+					<li><a href="#this">꽃이0005</a></li>
+					<li><a href="#this">꽃이0006</a></li>
+					<li><a href="#this">꽃이0007</a></li>
+				</ul>
+			</dd>
+			<dt class="tab03"><a href="#this">tab03</a></dt>
+			<dd>
+				<ul>
+					<li><a href="#this">피었습니다.00001</a></li>
+					<li><a href="#this">피었습니다.00002</a></li>
+					<li><a href="#this">피었습니다.00003</a></li>
+					<li><a href="#this">피었습니다.00004</a></li>
+					<li><a href="#this">피었습니다.00005</a></li>
+					<li><a href="#this">피었습니다.00006</a></li>
+					<li><a href="#this">피었습니다.00007</a></li>
+					<li><a href="#this">피었습니다.00008</a></li>
+					<li><a href="#this">피었습니다.00009</a></li>
+					<li><a href="#this">피었습니다.00010</a></li>
+				</ul>
+			</dd>
+		</dl>
+		
+		<dl class="dlTab03">
+			<dt class="tab01 on"><a href="#this">tab01</a></dt>
+			<dd>
+				<ul>
+					<li><a href="#this">마파001</a></li>
+					<li><a href="#this">마파002</a></li>
+					<li><a href="#this">마파003</a></li>
+					<li><a href="#this">마파004</a></li>
+				</ul>
+			</dd>
+			<dt class="tab02"><a href="#this">tab02</a></dt>
+			<dd>
+				<ul>
+					<li><a href="#this">두부0001</a></li>
+					<li><a href="#this">두부0002</a></li>
+					<li><a href="#this">두부0003</a></li>
+					<li><a href="#this">두부0004</a></li>
+					<li><a href="#this">두부0005</a></li>
+					<li><a href="#this">두부0006</a></li>
+					<li><a href="#this">두부0007</a></li>
+				</ul>
+			</dd>
+			<dt class="tab03"><a href="#this">tab03</a></dt>
+			<dd>
+				<ul>
+					<li><a href="#this">덮밥00001</a></li>
+					<li><a href="#this">덮밥00002</a></li>
+					<li><a href="#this">덮밥00003</a></li>
+					<li><a href="#this">덮밥00004</a></li>
+					<li><a href="#this">덮밥00005</a></li>
+					<li><a href="#this">덮밥00006</a></li>
+					<li><a href="#this">덮밥00007</a></li>
+					<li><a href="#this">덮밥00008</a></li>
+					<li><a href="#this">덮밥00009</a></li>
+					<li><a href="#this">덮밥00010</a></li>
+				</ul>
+			</dd>
+		</dl>
+	</div>
+	<div class="tabList">
+		<a href="#this" class="on">tab01</a>
+		<a href="#this">tab02</a>
+		<a href="#this">tab03</a>
+	</div>
+</body>
+</html>
