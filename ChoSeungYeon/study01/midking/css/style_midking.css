@@ -1,0 +1,82 @@
+a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  padding: 5px 0;
+}
+
+ul,
+dd {
+  margin: 0;
+}
+
+.dlTab:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+dl {
+  width: 302px;
+  position: relative;
+  padding-top: 29px;
+  margin-left: 10px;
+  float: left;
+}
+dl dt {
+  width: 100px;
+  text-align: center;
+  border: 1px solid #000;
+  position: absolute;
+  top: 0;
+}
+dl dt.tab01 {
+  left: 0;
+}
+dl dt.tab02 {
+  left: 101px;
+}
+dl dt.tab03 {
+  left: 202px;
+}
+dl dt.on {
+  border-bottom: none;
+}
+dl dt.on a {
+  font-weight: bold;
+  color: red;
+}
+dl dt.on + dd {
+  display: block;
+}
+dl dd {
+  display: none;
+  width: 100%;
+  padding: 10px 0;
+  border: 1px solid #000;
+  border-top: none;
+}
+
+.tabList:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.tabList a {
+  float: left;
+  width: 100px;
+  display: block;
+  padding: 5px 20px;
+  border: 1px solid #000;
+  border-left: none;
+  text-align: center;
+}
+.tabList a:first-child {
+  border-left: 1px solid #000;
+}
+.tabList a.on {
+  color: blue;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style_midking.css.map */

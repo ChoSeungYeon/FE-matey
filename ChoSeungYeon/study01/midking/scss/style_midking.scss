@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@mixin clear(){
+	&:after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+}
+
+a{text-decoration:none;color:#000;display:block;padding:5px 0;}
+ul,
+dd{margin:0;}
+.dlTab{
+	@include clear();
+}
+dl{
+	width:302px;
+	position:relative;
+	padding-top:29px;
+	margin-left:10px;
+	float:left;
+	dt{
+		width:100px;
+		text-align:center;
+		border:1px solid #000;
+		position:absolute;
+		top:0;
+		&.tab01{
+			left:0;
+		}
+		&.tab02{
+			left:101px;
+		}
+		&.tab03{
+			left:202px;
+		}
+		&.on{
+			border-bottom:none;
+
+			a{
+				font-weight:bold;
+				color:red;
+			}
+			&+dd{
+				display:block;
+			}
+		}
+	}
+	dd{
+		display:none;
+		width:100%;
+		padding:10px 0;
+		border:1px solid #000;
+		border-top:none;
+	}
+}
+
+.tabList{
+	@include clear();
+	a{
+		float:left;
+		width:100px;
+		display:block;
+		padding:5px 20px;
+		border:1px solid #000;
+		border-left:none;
+		text-align:center;
+
+		&:first-child{
+			border-left:1px solid #000;
+		}
+
+		&.on{
+			color:blue;
+			font-weight:bold;
+		}
+	}
+}
