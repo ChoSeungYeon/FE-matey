@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="kor">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <style>
+        .tab {display:none}
+        .tab.on {display:block;color:red}
+        ul {overflow:hidden;list-style: none;margin:0;padding:0;}
+        ul li {float:left;margin-left:10px;}
+        ul li:first-child {margin-left:0;}
+    </style>
+</head>
+<body>
+    <h1>TAB</h1>
+    <ul>
+        <li><a href="#tab1">TAB1</a></li>
+        <li><a href="#tab2">TAB2</a></li>
+        <li><a href="#tab3">TAB3</a></li>
+    </ul>
+    <div id="tab1" class="tab">
+        <p>tab1 area</p>
+    </div>
+    <div id="tab2" class="tab on">
+        <p>tab2 area</p>
+    </div>
+    <div id="tab3" class="tab">
+        <p>tab3 area</p>
+    </div>
+
+</body>
+<script>
+    $(document).ready(function(){
+        //초기 활성화된 tab 영역을 확인한다.
+        var $chk ="#"+$('.tab.on').attr('id');
+
+        //탭을 사용자가 클릭했을경우
+        $('ul li a').click(function(){
+          var $tab = $(this).attr('href'); //클릭한 탭의 id값을 저장한다.
+           if($chk!=null){ //초기 tab 활성화 값이 있을경우
+               $($chk).removeClass("on");
+               $($tab).addClass('on');
+           }else{ //초기 tab 활성화가 값이 없을경우
+               $($tab).addClass('on');
+           }
+            $chk = $tab;  //사용자가 클릭한 탭값을 반환
+        });
+    })
+</script>
+</html>
