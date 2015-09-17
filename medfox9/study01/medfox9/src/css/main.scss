@@ -41,27 +41,27 @@ html,body {
         overflow:hidden;
     }
     .rainGroup {
-        position:relative;
-        > div {
+        position:absolute;
+        top:0;
+        animation:rainAinmate 1s infinite linear;
+        > .cover div {
             width:1px;
             height:20px;
             background:rgba(0,0,0,0.8);
             position:absolute;
-            animation:rainAinmate 1s infinite linear;
         }
    }
-    .rainGroup2 {
+    .rainGroup.sub {
         @extend .rainGroup;
-        -webkit-animation-delay: 3s;
-        animation-delay: 3s;
-        top:-300%;
+        animation-duration: 1.5s;
+        top:-50%;
     }
 }
 
-@for $i from 1 through 20 {
+@for $i from 1 through 15 {
     .rain#{$i} {
         left:random(100)+px;
-        top:random(700)*-1+100+px;
+        top:random(500)*-1+100+px;
         opacity: (random(3)*0.1+0.1);
     }
 }
@@ -72,17 +72,24 @@ html,body {
 
 //FRAME AREA
 @include keyframes(rainAinmate) {
-    100%   {margin-top:1000px}
-}
-@include keyframes(rainAinmate2) {
-    100%   {margin-top:800px}
+    100%   {top:170%}
 }
 
-
+.endLoading {display:none}
 .text {
     position:absolute;
     bottom:-80px;
     font-size:14px;
     text-align:center;
-    font-weight:700
+    font-weight:700;
+    p {height:30px;}
+    p.skip {display:none;height:35px}
 }
+
+.text.end {
+    p,img {display:none}
+    p.skip {display:block}
+    img.endLoading {display:block}
+}
+
+a {text-decoration:none;color:#000000}
