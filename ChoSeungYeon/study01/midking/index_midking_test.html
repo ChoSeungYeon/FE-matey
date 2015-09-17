@@ -6,37 +6,21 @@
 	<link rel="stylesheet" href="css/style_midking.css">
 	<title>tab</title>
 	<script>
+		/* jquery로 class를 동적으로 조정할때 ie8이하 렌더링 문제 발생에 따른 테스트 */
 		$(document).ready(function() {
 			var $dtA = $('dl dt a');
-			var $dtA01 = $('.dlTab01 dt a');
-			var $dtA02 = $('.dlTab02 dt a');
-			var $dtA03 = $('.dlTab03 dt a');
 			var className = 'on';
 
 			/* 경로, 클래스명 */
 			var $toggleClass = function toggleClass($this, className){
 				$this.addClass(className);
 				$this.siblings().removeClass(className);
+				$('body').toggleClass('ie8-fix');
 			}
 			
-			/* 경로, 동작(fast, slow) */
-			var $dlTab = function dlTab($dt, $speed){
-				$toggleClass($dt, className);
-				$dt.siblings('dd').hide($speed);
-				$dt.next().show($speed);
-			}
-
 			$dtA.on('click', function(){
-				$dlTab($(this).parent());
+				$toggleClass($(this).parent(), className);
 			});
-
-			/*$dtA02.on('click', function(){
-				$dlTab($(this).parent(), "fast");
-			});
-
-			$dtA03.on('click', function(){
-				$dlTab($(this).parent(), "slow");
-			});*/
 
 			$('.tabList a').on('click', function(){
 				$toggleClass($(this), className);
