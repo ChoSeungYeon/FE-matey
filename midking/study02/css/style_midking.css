@@ -1,0 +1,29 @@
+ul {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+}
+ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+ul li {
+  list-style: none;
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+ul {
+  border-left: 1px solid #f00;
+}
+ul li {
+  border: 1px solid #f00;
+  border-left: 0;
+}
+ul li:first-child + li + li ~ li {
+  border-top: 0;
+}
+
+/*# sourceMappingURL=style_midking.css.map */
